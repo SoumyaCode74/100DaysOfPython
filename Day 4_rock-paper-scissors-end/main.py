@@ -36,11 +36,11 @@ def play_game():
 	computer_state = 'Computer wins!'
 	for i in range(10):
 		print(f"Round {i+1}")
-		print('What do you choose? 0: Rock, 1: Paper, 2: Scissors', end = ': ')
+		print('What do you choose? Rock: 0, Paper: 1,  Scissors: 2', end = ': ')
 		user = int(input().strip())
 		while user not in (0, 1, 2):
 			print('Wrong choice. Please try again! ')
-			print ('What do you choose? 0: Rock, 1: Paper, 2: Scissors', end = ': ')
+			print ('What do you choose? Rock: 0, Paper: 1,  Scissors: 2', end = ': ')
 			user = int (input ())
 		computer = randint(0,2)
 		#0: Rock, 1: Paper, 2: Scissors
