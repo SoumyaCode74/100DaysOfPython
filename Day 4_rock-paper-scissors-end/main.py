@@ -34,7 +34,7 @@ def play_game():
 	computer_chose = [f'Computer chose {x}' for x in choices]
 	user_state = 'You win!'
 	computer_state = 'Computer wins!'
-	for i in range(10):
+	for i in range(5):
 		print(f"Round {i+1}")
 		print('What do you choose? Rock: 0, Paper: 1,  Scissors: 2', end = ': ')
 		user = int(input().strip())
@@ -82,6 +82,8 @@ def declare_result(user_pts, computer_pts):
 		print("Ahaaa!! You both are equal!!")
 
 def display_rules():
+	print('There are 5 rounds. For each round, winner gets 1 point. No negative point')
+	print('At the end of the 5th round, final result will be displayed')
 	print ('---------------------------------------------')
 	line = ['(\t','You\t',',','\tComputer\t',',','\tWho Wins?\t',')']
 	print(''.join(line))
