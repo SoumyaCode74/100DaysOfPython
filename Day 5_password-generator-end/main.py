@@ -83,6 +83,8 @@ if __name__ == "__main__":
 		if choice != 'Y':
 			break
 	print('Please find your password in password.txt!',
-	      "Please delete the file if you're on a public terminal", ':)')
+	      "Please delete the file after use if you're on a public terminal", ':)')
 	with open('password.txt','w+') as f:
 		f.write(password)
+	print('Press any key to continue...')
+	input()
